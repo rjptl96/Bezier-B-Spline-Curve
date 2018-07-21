@@ -625,7 +625,7 @@ void mouse(int button, int state, int x, int y)
                 
             }
             
-            if (trybeziers == true) {
+            if (true) {
                 for (int i = 0; i < BezierCurves.size(); i++) {
                     if (!BezierCurves[i].bezierPoints.empty())
                     {
@@ -889,7 +889,7 @@ void key(unsigned char ch, int x, int y)
         
     }
     
-    if (trybeziers == true) {
+    if (true) {
         for (int i = 0; i < BezierCurves.size(); i++) {
             if (!BezierCurves[i].bezierPoints.empty())
             {
