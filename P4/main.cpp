@@ -384,11 +384,12 @@ void openFile()
     vector<point> tempdeboorpts;
     vector<point> tempbezierpts;
     while (true) {
-        cout<< "What is the name of the file with the objects you woud like to load (with extension)?";
+        cout<< "What is the name of the file with the objects you woud like to load (with extension), if none is found one will be created?";
         getline(cin, fileName);
-        polyfile.open (fileName, ios::in);
-        if (polyfile.is_open())
+        polyfile.open (fileName, ios::in );
+        if (true)
         {
+
             polyfile >> howmanyObjects;
             //cout << howmanypolygons<< endl;
             
@@ -854,7 +855,7 @@ void key(unsigned char ch, int x, int y)
     xx = x;
     yy = win_height-y;
     bool acurvept = false;
-    bool trybeziers = false;
+    bool trybeziers = true;
     
     for (int i = 0; i < BSplineCurves.size(); i++) {
         if (!BSplineCurves[i].deBoorPoints.empty())
@@ -889,7 +890,7 @@ void key(unsigned char ch, int x, int y)
         
     }
     
-    if (true) {
+    if (trybeziers == true) {
         for (int i = 0; i < BezierCurves.size(); i++) {
             if (!BezierCurves[i].bezierPoints.empty())
             {
