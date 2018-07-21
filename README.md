@@ -1,8 +1,11 @@
 # Bezier-B-Spline-Curve
 
+Executables: 
+
+https://github.com/rjptl96/Bezier-B-Spline-Curve/releases
+
 Hello
 
-This is the Project 4 by Raj Patel
 
 Instructions of Compilation and Before Use:
 
@@ -140,14 +143,5 @@ NOTE: This menu may not work via SSH (the menu may not show up). If so I have im
 'X' - Exit
 
 
-----------------------------------------------------------------------------------------
-
-What Works What Doesn't: :)  
-
-Everything is working. I think :P. One thing that could be awkward is adding points to an existing curve. For example if a curve is loaded from right to left. And you hover over a point and hit 'a' and click to the left of the hover point, it might accidentally connect the right point to the the new point. Just that. It still adds the point correctly and connects the curve fine. 
-
-
-
--Raj Patel
 
 
